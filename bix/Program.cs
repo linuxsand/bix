@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization.Formatters.Soap;
@@ -16,10 +16,10 @@ namespace bix
             string help = "usage: bix source.vpp [--bin|--xml] target.vpp [option]\n\t option: min, results, all";
             if (args.Length < 3 || args.Length > 4)
             {
-                foreach (var s in args)
-                {
-                    Console.WriteLine(s);
-                }
+                //foreach (var s in args)
+                //{
+                    //Console.WriteLine(s);
+                //}
                 Console.WriteLine(help);
                 return -1;
             }
